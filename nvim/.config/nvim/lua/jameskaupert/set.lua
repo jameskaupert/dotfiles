@@ -12,3 +12,7 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.colorcolumn = "80"
 
+vim.opt.wrap = false
+
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
