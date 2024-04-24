@@ -20,6 +20,13 @@ return {
 
         require('mason').setup({})
         require('mason-lspconfig').setup({
+            ensure_installed = {
+                "bashls",
+                "gopls",
+                "lua_ls",
+                "tsserver",
+                "yamlls"
+            },
             handlers = {
                 function(server_name)
                     require('lspconfig')[server_name].setup({})
@@ -30,7 +37,6 @@ return {
                 end,
             }
         })
-
         ---
         -- Autocompletion config
         ---
