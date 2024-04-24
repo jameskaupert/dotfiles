@@ -1,0 +1,9 @@
+import = [
+  "~/.config/alacritty/catppuccin-macchiato.toml"
+]
+
+[font]
+size = 35
+
+[window]
+decorations = "none"
