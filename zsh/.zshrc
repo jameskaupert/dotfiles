@@ -47,11 +47,8 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-# Shell integrations
-source <(fzf --zsh)
-
 # Path
-export PATH="$PATH:/home/localuser/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/usr/local/go/bin"
 
@@ -61,6 +58,14 @@ export NVM_DIR="$HOME/.nvm"
 . "$HOME/.cargo/env"
 
 [ -f ~/.cargo/env ] && source $HOME/.cargo/env
+
+# Shell integrations
+# Setup fzf
+# ---------
+if [[ ! "$PATH" == *$HOME/.fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}$HOME/.fzf/bin"
+fi
+source <(fzf --zsh)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
