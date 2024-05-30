@@ -25,9 +25,17 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 autoload -U compinit && compinit
 
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 ## Autosuggestions
 zinit light zsh-users/zsh-autosuggestions
+
+## fzf-tab
+zinit light Aloxaf/fzf-tab
+
+# Completion Styling
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
 # Keybindings
 bindkey -e
@@ -46,6 +54,9 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
+
+# Aliases
+alias ls='ls --color'
 
 # Path
 export PATH="$PATH:$HOME/.local/bin"
