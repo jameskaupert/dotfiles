@@ -1,0 +1,5 @@
+[shell]
+program = "/bin/zsh"
+
+[window]
+title = "Hello"
