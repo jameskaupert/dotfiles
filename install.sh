@@ -1,5 +1,5 @@
 #!/bin/sh
 
-stow -t ~/ alacritty
+stow -t ~/ kitty
 stow -t ~/ nvim
 stow -t ~/ zsh
