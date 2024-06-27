@@ -16,5 +16,6 @@
   "plenary.nvim": { "branch": "master", "commit": "08e301982b9a057110ede7a735dd1b5285eb341f" },
   "precognition.nvim": { "branch": "main", "commit": "2a566f03eb06859298eff837f3a6686dfa5304a5" },
   "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" },
+  "trouble.nvim": { "branch": "main", "commit": "88c3be40c061ce053ab326ce4fdcb973a1f785ff" },
   "undotree": { "branch": "master", "commit": "56c684a805fe948936cda0d1b19505b84ad7e065" }
 }
