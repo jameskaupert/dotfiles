@@ -1,0 +1,11 @@
+font_size 16
+
+font_family GoMono Nerd Font Mono
+
+cursor_beam_thickness 2.0
+
+
+# BEGIN_KITTY_THEME
+# Nord
+include current-theme.conf
+# END_KITTY_THEME
