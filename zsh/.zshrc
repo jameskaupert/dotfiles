@@ -57,6 +57,7 @@ setopt hist_find_no_dups
 
 # Aliases
 alias ls='ls --color'
+alias v="nvim"
 
 # Path
 export PATH="$PATH:$HOME/.local/bin"
