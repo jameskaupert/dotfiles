@@ -23,6 +23,14 @@ return {
             vim.keymap.set("n", "<space>e", vim.diagnostic.open_float, bufopts)
         end)
 
+        -- icons for sign column
+        lsp_zero.set_sign_icons({
+            error = '✘',
+            warn = '▲',
+            hint = '⚑',
+            info = '»'
+        })
+
         require('mason').setup({})
         require('mason-lspconfig').setup({
             ensure_installed = {
@@ -58,6 +66,10 @@ return {
             sources = {
                 { name = "nvim_lsp" },
                 { name = "buffer" }
+            },
+            preselect = "item",
+            completion = {
+                completeopt = "menu,menuone,noinsert"
             },
             mapping = cmp.mapping.preset.insert({
                 -- `Enter` key to confirm completion
