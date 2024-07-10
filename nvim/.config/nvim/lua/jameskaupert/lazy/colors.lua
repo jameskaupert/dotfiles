@@ -70,6 +70,7 @@ local onedarkpro = {
     end
 }
 
+-- error colors aren't set --
 local kanagawa_paper = {
     "sho-87/kanagawa-paper.nvim",
     lazy = false,
