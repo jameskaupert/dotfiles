@@ -60,6 +60,7 @@ alias ls='ls --color'
 alias v="nvim"
 alias dots="cd ~/dotfiles"
 alias setup="cd ~/setup"
+alias setup="batcat cat"
 
 # Path
 export PATH="$PATH:$HOME/.local/bin"
