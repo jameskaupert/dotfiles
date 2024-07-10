@@ -81,6 +81,9 @@ export NVM_DIR="$HOME/.nvm"
 
 [ -f ~/.cargo/env ] && source $HOME/.cargo/env
 
+# bat theme
+export BAT_THEME="Nord"
+
 # Shell integrations
 # Setup fzf
 # ---------
