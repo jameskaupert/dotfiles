@@ -84,6 +84,9 @@ export NVM_DIR="$HOME/.nvm"
 # bat theme
 export BAT_THEME="Nord"
 
+# Nord dircolors
+test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
+
 # Shell integrations
 # Setup fzf
 # ---------

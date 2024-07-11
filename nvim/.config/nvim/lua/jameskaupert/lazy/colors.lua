@@ -19,6 +19,15 @@ local gruvbox_material = {
     end
 }
 
+local arctic_nord = {
+    'arcticicestudio/nord-vim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+        vim.cmd.colorscheme('nord')
+    end
+}
+
 local nord = {
     'shaunsingh/nord.nvim',
     priority = 1000,
@@ -93,4 +102,4 @@ local everforest = {
     end
 }
 
-return catppuccin_macchiato
+return arctic_nord
