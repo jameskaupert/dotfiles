@@ -2,6 +2,6 @@
 
 stow -t ~/ kitty
 stow -t ~/ nvim
-stow -t ~/ p10k
+stow -t ~/ oh-my-posh
 stow -t ~/ tmux
 stow -t ~/ zsh
