@@ -47,6 +47,7 @@ alias v="nvim"
 alias dots="cd ~/dotfiles"
 alias setup="cd ~/setup"
 alias cat="batcat"
+alias godot="Godot"
 
 # Path
 export PATH="$PATH:$HOME/.local/bin"
