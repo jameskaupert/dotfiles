@@ -49,6 +49,11 @@ alias setup="cd ~/setup"
 alias cat="batcat"
 alias godot="Godot"
 
+# Functions
+function ng() {
+    local filename="${1:-.}" # set filename to . if no argument passed
+    nvim --listen /tmp/godot.pipe "$filename"
+}
 # Path
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/opt/nvim-linux64/bin"
@@ -75,6 +80,9 @@ export BAT_THEME="Nord"
 test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 
 # Shell integrations
+# Oh My Posh
+eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/omp.toml)"
+
 # Setup fzf
 # ---------
 if [[ ! "$PATH" == *$HOME/.fzf/bin* ]]; then
@@ -82,7 +90,5 @@ if [[ ! "$PATH" == *$HOME/.fzf/bin* ]]; then
 fi
 source <(fzf --zsh)
 
-# Oh My Posh
-eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/omp.toml)"
-
+# FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
