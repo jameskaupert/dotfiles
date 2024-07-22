@@ -48,6 +48,7 @@ alias dots="cd ~/dotfiles"
 alias setup="cd ~/setup"
 alias cat="batcat"
 alias godot="Godot"
+alias air="~/.air"
 
 # Functions
 function ng() {
