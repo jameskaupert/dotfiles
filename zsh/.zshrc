@@ -42,7 +42,7 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 
 # Aliases
-alias ls='ls --color'
+alias ls='eza -la'
 alias v="nvim"
 alias dots="cd ~/dotfiles"
 alias setup="cd ~/setup"
