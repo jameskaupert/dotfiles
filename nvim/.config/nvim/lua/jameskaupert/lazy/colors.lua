@@ -102,4 +102,4 @@ local everforest = {
     end
 }
 
-return arctic_nord
+return gruvbox_material
