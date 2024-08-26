@@ -44,10 +44,14 @@ setopt hist_find_no_dups
 # Aliases
 alias ls='eza -la'
 alias v="nvim"
+alias c="clear"
+alias e="exit"
+alias t="tmux"
 alias dots="cd ~/dotfiles"
 alias setup="cd ~/setup"
 alias cat="batcat"
 alias godot="Godot"
+alias repos="cd ~/workspace/github.com/jameskaupert"
 
 # Functions
 function ng() {
