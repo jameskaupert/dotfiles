@@ -48,12 +48,14 @@ alias c="clear"
 alias e="exit"
 alias t="tmux"
 alias sz="source ~/.zshrc"
+alias vz="nvim ~/.zshrc"
 alias dots="cd ~/dotfiles"
 alias setup="cd ~/setup"
 alias cat="batcat"
 alias godot="Godot"
 alias repos="cd ~/workspace/github.com/jameskaupert"
 alias obsidian="flatpak run md.obsidian.Obsidian"
+alias path='echo -e ${PATH//:/\\n} | sort'
 
 # Functions
 function ng() {
