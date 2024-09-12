@@ -65,6 +65,7 @@ function ng() {
 # Path
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:/opt/postman-linux-x64/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/usr/local/bin/godot"
 export PATH="$PATH:$HOME/go/bin"
