@@ -56,6 +56,7 @@ alias godot="Godot"
 alias repos="cd ~/workspace/github.com/jameskaupert"
 alias obsidian="flatpak run md.obsidian.Obsidian"
 alias path='echo -e ${PATH//:/\\n} | sort'
+alias learn="cd ~/workspace/github.com/jameskaupert/_learning"
 
 # Functions
 function ng() {
