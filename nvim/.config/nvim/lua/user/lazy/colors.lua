@@ -102,4 +102,4 @@ local everforest = {
     end
 }
 
-return gruvbox_material
+return catppuccin_macchiato
