@@ -58,6 +58,7 @@ alias repos="cd ~/workspace/github.com/jameskaupert"
 alias obsidian="flatpak run md.obsidian.Obsidian"
 alias path='echo -e ${PATH//:/\\n} | sort'
 alias learn="cd ~/workspace/github.com/jameskaupert/always-be-learning"
+alias website="cd ~/workspace/github.com/jameskaupert/personal-website"
 
 # Functions
 function ng() {
