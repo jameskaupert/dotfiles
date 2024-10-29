@@ -1,8 +1,8 @@
 // -*- mode: jsonc -*-
 {
   // "layer": "top", // Waybar at top layer
-  "position": "bottom", // Waybar position (top|bottom|left|right)
-  "height": 24, // Waybar height (to be removed for auto height)
+  "position": "top", // Waybar position (top|bottom|left|right)
+  // "height": 24, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
   "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
@@ -16,16 +16,16 @@
   "modules-right": [
     // "mpd",
     // "idle_inhibitor",
-    // "pulseaudio",
-    // "network",
-    "power-profiles-daemon",
+     "pulseaudio",
+     "network",
+    //"power-profiles-daemon",
     "cpu",
     "memory",
     "temperature",
-    "backlight",
+    //"backlight",
     // "keyboard-state",
     // "sway/language",
-    "battery",
+    //"battery",
     // "battery#bat2",
     // "custom/power",
     "clock",
@@ -160,7 +160,8 @@
   },
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
-    "format-wifi": "{essid} ({signalStrength}%) ",
+    //"format-wifi": "{essid} ({signalStrength}%) ",
+    "format-wifi": "",
     "format-ethernet": "{ipaddr}/{cidr} ",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
