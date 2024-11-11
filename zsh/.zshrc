@@ -93,7 +93,7 @@ test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/omp.toml)"
 
 # zoxide
-eval "$(zoxide init zsh)"
+eval "$(zoxide init zsh --cmd cd)"
 
 # Setup fzf
 # ---------
