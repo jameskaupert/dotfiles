@@ -92,6 +92,9 @@ test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 # Oh My Posh
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/omp.toml)"
 
+# zoxide
+eval "$(zoxide init zsh)"
+
 # Setup fzf
 # ---------
 if [[ ! "$PATH" == *$HOME/.fzf/bin* ]]; then
