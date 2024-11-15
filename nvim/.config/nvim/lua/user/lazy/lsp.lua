@@ -37,7 +37,7 @@ return {
                 "bashls",
                 "gopls",
                 "lua_ls",
-                "tsserver",
+                "ts_ls",
                 "yamlls"
             },
             handlers = {
