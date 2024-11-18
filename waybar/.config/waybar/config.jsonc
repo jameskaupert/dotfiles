@@ -15,8 +15,8 @@
   "modules-center": ["sway/window"],
   "modules-right": [
     // "mpd",
-    // "idle_inhibitor",
-     "pulseaudio",
+    "idle_inhibitor",
+    "pulseaudio",
      "network",
     //"power-profiles-daemon",
     "cpu",
@@ -106,8 +106,8 @@
   },
   "clock": {
     // "timezone": "America/New_York",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "format": "{:%a %b %d %Y   %H:%M }",
   },
   "cpu": {
     "format": "{usage}% ",
