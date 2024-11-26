@@ -34,9 +34,13 @@ return {
         require('mason').setup({})
         require('mason-lspconfig').setup({
             ensure_installed = {
+                "astro",
                 "bashls",
                 "gopls",
+                "html",
                 "lua_ls",
+                "ruff",
+                "tailwindcss",
                 "ts_ls",
                 "yamlls"
             },
