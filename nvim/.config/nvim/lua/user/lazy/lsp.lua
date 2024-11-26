@@ -38,8 +38,8 @@ return {
                 "bashls",
                 "gopls",
                 "html",
+                "jedi_language_server",
                 "lua_ls",
-                "ruff",
                 "tailwindcss",
                 "ts_ls",
                 "yamlls"
