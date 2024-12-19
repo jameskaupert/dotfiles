@@ -44,6 +44,7 @@ setopt hist_find_no_dups
 # Aliases
 alias ls='eza -la'
 alias v="nvim"
+alias k="kubectl"
 alias c="clear"
 alias e="exit"
 alias t="tmux"
@@ -106,3 +107,11 @@ source <(fzf --zsh)
 
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+# K8s
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/home/localuser/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
