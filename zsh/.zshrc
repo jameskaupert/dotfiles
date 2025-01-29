@@ -111,6 +111,7 @@ source <(fzf --zsh)
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
 # K8s
+source <(kubectl completion zsh)
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/home/localuser/.rd/bin:$PATH"
