@@ -102,4 +102,4 @@ local everforest = {
     end
 }
 
-return catppuccin_macchiato
+return onedarkpro
