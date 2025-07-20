@@ -20,3 +20,7 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.g.netrw_banner = 0 -- Hide giant banner for netrw
+
+vim.diagnostic.config({
+    virtual_text = true,
+})
