@@ -102,4 +102,14 @@ local everforest = {
     end
 }
 
-return onedarkpro
+local zenburned = {
+    'zenbones-theme/zenbones.nvim',
+    dependencies = "rktjmp/lush.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+        vim.cmd.colorscheme('zenburned')
+    end
+}
+
+return kanagawa_paper

@@ -1,4 +1,4 @@
-vim.opt.termguicolors=false
+vim.opt.termguicolors=true
 
 vim.opt.softtabstop=4
 vim.opt.shiftwidth=4
@@ -24,3 +24,4 @@ vim.g.netrw_banner = 0 -- Hide giant banner for netrw
 vim.diagnostic.config({
     virtual_text = true,
 })
+

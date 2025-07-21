@@ -116,3 +116,10 @@ source <(kubectl completion zsh)
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/home/localuser/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+# bun completions
+[ -s "/home/localuser/.bun/_bun" ] && source "/home/localuser/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
