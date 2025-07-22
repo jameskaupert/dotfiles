@@ -158,3 +158,6 @@ fi
 
 # Custom Additions
 set -o vi
+
+# Activate Mise
+eval "$(mise activate bash)"
