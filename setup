@@ -10,7 +10,7 @@ if [ ! -d "$HOME/.zsh" ]; then
 fi
 
 if [ ! -d "$HOME/.local/bin/oh-my-posh" ]; then
-  curl -s https://ohmyposh.dev/install.sh | bash -s -- -d $HOME/.local/bin
+  curl -s https://ohmyposh.dev/install.sh | bash -s -- -d "$HOME/.local/bin"
 fi
 
 if ! command -v chezmoi >/dev/null; then
