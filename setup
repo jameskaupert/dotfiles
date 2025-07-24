@@ -9,8 +9,10 @@ if [ ! -d "$HOME/.zsh" ]; then
   mkdir -p "$HOME/.zsh"
 fi
 
-if [ ! -d "$HOME/.local/bin/oh-my-posh" ]; then
-  curl -s https://ohmyposh.dev/install.sh | bash -s -- -d "$HOME/.local/bin/oh-my-posh"
+OMP_INSTALL_DIR="$HOME/.local/bin/oh-my-posh"
+if [ ! -d "$OMP_INSTALL_DIR" ]; then
+  mkdir -p "$OMP_INSTALL_DIR"
+  curl -s https://ohmyposh.dev/install.sh | bash -s -- -d "$OMP_INSTALL_DIR"
 fi
 
 if ! command -v chezmoi >/dev/null; then
