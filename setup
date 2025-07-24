@@ -9,7 +9,7 @@ if [ ! -d "$HOME/.zsh" ]; then
   mkdir -p "$HOME/.zsh"
 fi
 
-curl -s https://ohmyposh.dev/install.sh | bash -s -- -d "$HOME/.local/bin"
+curl -s https://ohmyposh.dev/install.sh | bash -s
 
 if ! command -v chezmoi >/dev/null; then
   sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:jameskaupert/dotfiles.git
