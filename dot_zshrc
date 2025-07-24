@@ -23,6 +23,10 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
+
+# Activate Mise
+eval "$(mise activate zsh)"
+
 # Keybindings
 bindkey -e
 bindkey '^p' history-search-backward
@@ -69,6 +73,7 @@ function ng() {
 }
 # Path
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/opt/Postman/app"
 export PATH="$PATH:/usr/local/go/bin"
