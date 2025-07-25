@@ -9,8 +9,13 @@ if [ ! -d "$HOME/.zsh" ]; then
   mkdir -p "$HOME/.zsh"
 fi
 
+# oh-my-posh install
 curl -s https://ohmyposh.dev/install.sh | bash -s
 
+# zoxide install
+curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+
+# chezmoi install
 if ! command -v chezmoi >/dev/null; then
   sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:jameskaupert/dotfiles.git
 fi
