@@ -24,6 +24,11 @@ if ! command -v yay &> /dev/null; then
     cd ~
 fi
 
+# Mise
+echo "🔧 Installing mise..."
+curl https://mise.run | sh
+export PATH="$HOME/.local/bin:$PATH"
+
 # Chezmoi
 echo "🏠 Setting up chezmoi..."
 sudo pacman -S --noconfirm chezmoi
