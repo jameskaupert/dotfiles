@@ -36,4 +36,25 @@ if [ ! -z "$DOTFILES_REPO" ]; then
     chezmoi init --apply $DOTFILES_REPO
 fi
 
+# Zsh setup
+echo "🐚 Setting up zsh..."
+
+# Install zsh if not already installed
+sudo pacman -S --noconfirm zsh zsh-completions
+
+# Change default shell to zsh
+if [[ $SHELL != *"zsh"* ]]; then
+    echo "Changing default shell to zsh..."
+    chsh -s $(which zsh)
+    echo "⚠️  You'll need to log out and back in for shell change to take effect"
+fi
+
+# Verify zsh installation
+if command -v zsh &> /dev/null; then
+    echo "✅ Zsh installed successfully"
+    zsh --version
+else
+    echo "❌ Zsh installation failed"
+    exit 1
+fi
 
