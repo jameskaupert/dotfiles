@@ -58,3 +58,9 @@ else
     exit 1
 fi
 
+# oh-my-posh install
+curl -s https://ohmyposh.dev/install.sh | bash -s
+
+# zoxide install
+curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+
