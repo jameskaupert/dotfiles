@@ -6,7 +6,7 @@ echo "🚀 Setting up Arch development environment..."
 # System packages
 echo "📦 Installing system packages..."
 sudo pacman -Syu --noconfirm
-sudo pacman -S --noconfirm base-devel git curl wget unzip docker docker-compose
+sudo pacman -S --noconfirm base-devel git curl wget unzip docker docker-compose wezterm
 
 # Docker setup
 echo "🐳 Setting up Docker..."
@@ -43,9 +43,9 @@ echo "🐚 Setting up zsh..."
 sudo pacman -S --noconfirm zsh zsh-completions
 
 # Change default shell to zsh
-if [[ $SHELL != *"zsh"* ]]; then
+if command -v zsh >/dev/null; then
     echo "Changing default shell to zsh..."
-    chsh -s $(which zsh)
+    sudo chsh -s $(command -v zsh) $USER
     echo "⚠️  You'll need to log out and back in for shell change to take effect"
 fi
 
