@@ -6,8 +6,12 @@
 }
 
 window#waybar {
-  background-color: #624c83;
-  border-bottom: 2px solid #e6c384;
+  background-color: #1f1f28;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to left, 
+        #624c83, #7fb4ca, #7aa89f, #87a987, 
+        #e6c384, #b6927b, #c4746e
+    ) 1;
   color: #dcd7ba;
   transition-property: background-color;
   transition-duration: 0.5s;
