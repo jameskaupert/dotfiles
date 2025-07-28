@@ -4,8 +4,11 @@ padding-y = [12, 0]
 padding-x = 15
 
 [cursor]
-shape = "beam"
-blinking = true
+shape = 'beam'
 
 [fonts]
 size = 20
+
+[window]
+blur = true
+opacity = 0.8

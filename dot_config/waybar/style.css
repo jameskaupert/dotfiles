@@ -6,9 +6,9 @@
 }
 
 window#waybar {
-  background-color: #938aa9;
+  background-color: #624c83;
   border-bottom: 2px solid #e6c384;
-  color: #eceaef;
+  color: #dcd7ba;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -27,13 +27,13 @@ button {
 
 button:hover {
   background: inherit;
-  box-shadow: inset 0 -3px #eceaef;
+  box-shadow: inset 0 -3px #dcd7ba;
 }
 
 #workspaces button {
   padding: 0 5px;
   background-color: transparent;
-  color: #eceaef;
+  color: #dcd7ba;
 }
 
 #workspaces button:hover {
@@ -42,7 +42,7 @@ button:hover {
 
 #workspaces button.active {
   background-color: #64727d;
-  box-shadow: inset 0 -3px #eceaef;
+  box-shadow: inset 0 -3px #dcd7ba;
 }
 
 #workspaces button.urgent {
@@ -51,7 +51,7 @@ button:hover {
 
 #mode {
   background-color: #64727d;
-  box-shadow: inset 0 -3px #eceaef;
+  box-shadow: inset 0 -3px #dcd7ba;
 }
 
 #clock,
@@ -72,7 +72,7 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
   padding: 0 10px;
-  color: #eceaef;
+  color: #dcd7ba;
   background-color: transparent;
 }
 
@@ -93,20 +93,20 @@ button:hover {
 
 #battery.charging,
 #battery.plugged {
-  color: #eceaef;
+  color: #dcd7ba;
   background-color: #808080; /* Changed to grey */
 }
 
 @keyframes blink {
   to {
-    background-color: #eceaef;
+    background-color: #dcd7ba;
     color: #000000;
   }
 }
 
 #battery.critical:not(.charging) {
-  background-color: #f53c3c;
-  color: #eceaef;
+  background-color: #e46876;
+  color: #dcd7ba;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: steps(12);
@@ -115,19 +115,19 @@ button:hover {
 }
 
 #network.disconnected {
-  background-color: #f53c3c;
+  background-color: #e46876;
 }
 
 #pulseaudio.muted {
-  color: #2a5c45;
+  color: #87a987;
 }
 
 #wireplumber.muted {
-  background-color: #f53c3c;
+  background-color: #e46876;
 }
 
 #temperature.critical {
-  background-color: #eb4d4b;
+  background-color: #e46876;
 }
 
 #tray > .passive {
@@ -136,7 +136,7 @@ button:hover {
 
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
-  background-color: #eb4d4b;
+  background-color: #e46876;
 }
 
 #idle_inhibitor.activated {
@@ -144,7 +144,7 @@ button:hover {
 }
 
 #mpd.disconnected {
-  background-color: #f53c3c;
+  background-color: #e46876;
 }
 
 #keyboard-state > label.locked {
@@ -157,11 +157,11 @@ button:hover {
 
 #privacy-item {
   padding: 0 5px;
-  color: white;
+  color: #dcd7ba;
 }
 
 #privacy-item.screenshare {
-  background-color: #cf5700;
+  background-color: #b6927b;
 }
 
 #privacy-item.audio-in {
