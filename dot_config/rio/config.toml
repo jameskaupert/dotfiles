@@ -1,1 +1,8 @@
 theme = "kanagawa-dragon"
+
+[cursor]
+shape = "beam"
+blinking = true
+
+[fonts]
+size = 18
