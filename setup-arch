@@ -6,7 +6,7 @@ echo "🚀 Setting up Arch development environment..."
 # System packages
 echo "📦 Installing system packages..."
 sudo pacman -Syu --noconfirm
-sudo pacman -S --noconfirm base-devel git curl wget unzip docker docker-compose wezterm
+sudo pacman -S --noconfirm base-devel git curl wget unzip docker docker-compose rio
 
 # Docker setup
 echo "🐳 Setting up Docker..."
