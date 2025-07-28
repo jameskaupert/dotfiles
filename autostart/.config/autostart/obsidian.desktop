@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Obsidian
-Exec=flatpak run md.obsidian.Obsidian --background
-Comment=Load Obsidian
