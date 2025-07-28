@@ -1,8 +1,11 @@
 theme = "kanagawa-dragon"
+confirm-before-quit = false
+padding-y = [12, 0]
+padding-x = 15
 
 [cursor]
 shape = "beam"
 blinking = true
 
 [fonts]
-size = 18
+size = 20

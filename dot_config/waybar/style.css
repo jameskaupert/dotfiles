@@ -6,8 +6,8 @@
 }
 
 window#waybar {
-  background-color: rgba(126, 100, 163, 0.5);
-  border-bottom: 2px solid rgba(198, 180, 103, 0.7);
+  background-color: #938aa9;
+  border-bottom: 2px solid #e6c384;
   color: #eceaef;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -46,7 +46,7 @@ button:hover {
 }
 
 #workspaces button.urgent {
-  background-color: #eb4d4b;
+  background-color: #e46876
 }
 
 #mode {
@@ -165,9 +165,9 @@ button:hover {
 }
 
 #privacy-item.audio-in {
-  background-color: #1ca000;
+  background-color: #87a987;
 }
 
 #privacy-item.audio-out {
-  background-color: #0069d4;
+  background-color: #7fb4ca;
 }
