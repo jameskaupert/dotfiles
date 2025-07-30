@@ -3,7 +3,7 @@ allowed-tools: Bash, Read
 description: Load context for a new agent session by analyzing codebase structure and README
 ---
 
-# Prime
+# Load
 This command loads essential context for a new agent session by examining the codebase structure and reading the project README.
 
 ## Instructions
