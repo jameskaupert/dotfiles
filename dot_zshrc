@@ -113,5 +113,5 @@ source <(fzf --zsh)
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
 # K8s
-#source <(kubectl completion zsh)
+source <(kubectl completion zsh)
 
