@@ -13,3 +13,6 @@ family = "CaskaydiaCove Nerd Font"
 [window]
 blur = true
 opacity = 0.8
+
+[editor]
+program = "nvim"
