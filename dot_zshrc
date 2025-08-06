@@ -55,6 +55,7 @@ alias k="kubectl"
 alias c="clear"
 alias e="exit"
 alias t="tmux"
+alias df="df -h"
 alias sz="source ~/.zshrc"
 alias vz="nvim ~/.zshrc"
 alias dots="cd ~/dotfiles"
@@ -67,7 +68,6 @@ alias obsidian="flatpak run md.obsidian.Obsidian"
 alias path='echo -e ${PATH//:/\\n} | sort'
 alias learn="cd ~/workspace/github.com/jameskaupert/always-be-learning"
 alias website="cd ~/workspace/github.com/jameskaupert/personal-website"
-alias windsurf="/usr/local/windsurf/windsurf"
 
 # Functions
 function ng() {
