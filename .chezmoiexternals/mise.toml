@@ -2,3 +2,4 @@
 type = "file"
 executable = true
 url = "https://mise.run"
+refreshPeriod = "168h"

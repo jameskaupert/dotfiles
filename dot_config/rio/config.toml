@@ -16,3 +16,6 @@ opacity = 0.8
 
 [editor]
 program = "nvim"
+
+[shell]
+program = "tmux"
