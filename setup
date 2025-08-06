@@ -1,8 +1,15 @@
 #!/bin/bash
 set -euo pipefail
 
+XDG_CONFIG_HOME="$HOME/.config"
+
 if command -v zsh >/dev/null; then
   sudo chsh -s $(command -v zsh) $USER
+fi
+
+# chezmoi install
+if ! command -v chezmoi >/dev/null; then
+  sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:jameskaupert/dotfiles.git
 fi
 
 if [ ! -d "$HOME/.zsh" ]; then
@@ -14,10 +21,5 @@ curl -s https://ohmyposh.dev/install.sh | bash -s
 
 # zoxide install
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
-
-# chezmoi install
-if ! command -v chezmoi >/dev/null; then
-  sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:jameskaupert/dotfiles.git
-fi
 
 exit 0
