@@ -75,7 +75,7 @@ function ng() {
     nvim --listen /tmp/godot.pipe "$filename"
 }
 # Path
-export GOROOT=/usr/local/go
+export GOROOT=/usr/bin/go
 export GOPATH="$HOME/go"
 
 export PATH="$PATH:$HOME/.local/bin"
