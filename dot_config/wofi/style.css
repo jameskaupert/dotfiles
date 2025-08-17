@@ -1,0 +1,59 @@
+* {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+}
+
+window {
+    margin: 0px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: 
+        linear-gradient(#1a1a1a, #1a1a1a) padding-box,
+        linear-gradient(25deg, #624c83, #7fb4ca, #7aa89f, #87a987, #e6c384, #b6927b, #c4746e) border-box;
+}
+
+#input {
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #e6c384;
+    background-color: #313033;
+    padding: 8px 12px;
+}
+
+#inner-box {
+    margin: 5px;
+    background-color: transparent;
+}
+
+#outer-box {
+    margin: 5px;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0px;
+    background-color: transparent;
+}
+
+#text {
+    margin: 5px;
+    color: #c0c0c0;
+}
+
+#entry {
+    padding: 6px 10px;
+    margin: 2px 5px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+#entry:selected {
+    background: linear-gradient(90deg, #624c8366, #7fb4ca66);
+    color: #e6c384;
+    outline: none;
+}
+
+#text:selected {
+    color: #ffffff;
+}
