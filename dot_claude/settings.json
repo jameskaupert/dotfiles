@@ -2,8 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(git diff)",
-      "fd",
-      "rg"
+      "Bash(fd:*)",
+      "Bash(rg:*)"
     ]
   },
   "statusLine": {

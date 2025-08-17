@@ -17,7 +17,7 @@
   - Case insensitive: `fd -i "pattern"`
 
 ### Content Searching
-- Use `rg` (ripgrep) for searching file contents when using Bash
+- ALWAYS use `rg` (ripgrep) for searching file contents instead of `grep` unless explicitly told
 - **Default to case-insensitive searches** - always use the `-i` flag unless case-sensitivity is explicitly needed
 
 ### Examples of Preferred Commands
