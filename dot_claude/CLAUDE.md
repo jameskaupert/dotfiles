@@ -1,7 +1,12 @@
 # CLAUDE.md - Project Assistant Configuration
 
-## Search and File Discovery Preferences
+## General Tool Preferences
+- **Avoid error suppression chains** - NEVER use `|| true` or `2>/dev/null` or similar approaches with commands
+  - Instead, let commands fail naturally
+  - Use specific flags like `rg --no-messages` if needed to suppress warnings
+  - This avoids triggering permission requirements for command chaining
 
+## Search and File Discovery Preferences
 ### File Finding
 - **ALWAYS use `fd` for file searches** instead of the Glob tool or `find` command
 - **Default to case-insensitive searches** - always use the `-i` flag unless case-sensitivity is explicitly needed

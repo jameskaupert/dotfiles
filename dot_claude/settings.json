@@ -1,9 +1,16 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git diff)",
+      "Read",
+      "List",
+      "Bash(git diff:*)",
+      "Bash(git show:*)",
+      "Bash(git log:*)",
       "Bash(fd:*)",
-      "Bash(rg:*)"
+      "Bash(rg:*)",
+      "Bash(which:*)",
+      "Bash(ls:*)",
+      "Bash(sed:*)"
     ]
   },
   "statusLine": {
