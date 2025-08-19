@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Claude statusline configuration
-# Displays: working directory, git branch with status, and Claude session time (when available)
+# Displays: working directory, git branch with status, Claude session time (when available), model name, and Claude Code version
 
 # Read JSON input from stdin
 input=$(cat)
@@ -10,6 +10,7 @@ input=$(cat)
 current_dir=$(echo "$input" | jq -r '.workspace.current_dir')
 project_dir=$(echo "$input" | jq -r '.workspace.project_dir')
 model_name=$(echo "$input" | jq -r '.model.display_name')
+claude_version=$(echo "$input" | jq -r '.version')
 
 # Calculate relative path from project to current directory
 if [[ "$current_dir" == "$project_dir"* ]]; then
@@ -90,6 +91,15 @@ fi
 
 if [[ -n "$session_time" ]]; then
   printf "${BLUE}%s${RESET}" "$session_time"
+fi
+
+# Add model and version information
+if [[ -n "$model_name" ]]; then
+  printf " ${PURPLE}%s${RESET}" "$model_name"
+fi
+
+if [[ -n "$claude_version" ]]; then
+  printf " ${CYAN}v%s${RESET}" "$claude_version"
 fi
 
 echo
