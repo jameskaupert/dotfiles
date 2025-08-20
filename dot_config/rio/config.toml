@@ -8,7 +8,8 @@ shape = 'beam'
 
 [fonts]
 size = 20
-family = "CaskaydiaCove Nerd Font"
+# family = "CaskaydiaCove Nerd Font"
+family = "JetBrainsMono Nerd Font"
 
 [window]
 blur = true
