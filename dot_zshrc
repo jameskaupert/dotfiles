@@ -103,8 +103,10 @@ export PATH="$PATH:$GOROOT/bin"
 # Oh My Posh
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/omp.toml)"
 
-# zoxide
-eval "$(zoxide init zsh --cmd cd)"
+# zoxide init, except for Claude Code environments
+if [[ "$CLAUDECODE" != "1" ]]; then
+    eval "$(zoxide init --cmd cd zsh)"
+fi
 
 # Setup fzf
 # ---------
