@@ -20,6 +20,13 @@ final_space = true
 
   [[blocks.segments]]
     style = 'plain'
+    template = '{{ if eq .Env.DEVPOD "true" }}[DEVPOD] {{ end }}'
+    foreground = 'red'
+    background = 'transparent'
+    type = 'text'
+
+  [[blocks.segments]]
+    style = 'plain'
     template = '{{ .Path }}'
     foreground = 'blue'
     background = 'transparent'

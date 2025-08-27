@@ -78,6 +78,11 @@ CYAN="\033[36m"
 RESET="\033[0m"
 
 # Build and print statusline with colors in a single line
+# Check if we're in a devpod environment
+if [[ "$DEVPOD" == "true" ]]; then
+  printf "${RED}[DEVPOD]${RESET} "
+fi
+
 printf "${CYAN}%s${RESET}" "$rel_path"
 
 if [[ -n "$git_info" ]]; then
