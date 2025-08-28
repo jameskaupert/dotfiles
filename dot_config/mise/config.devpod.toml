@@ -1,0 +1,16 @@
+[tools]
+usage = "latest" # mise completion
+bat = "latest"
+chezmoi = "latest"
+fd = "latest"
+fzf = "latest"
+gh = "latest"
+eza = "latest"
+ripgrep = "latest"
+jq = "latest"
+neovim = "latest"
+node = "latest"
+python = "latest"
+kubectl = "latest"
+"npm:@anthropic-ai/claude-code" = "latest"
+"npm:ccusage" = "latest"
