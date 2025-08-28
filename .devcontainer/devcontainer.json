@@ -4,7 +4,8 @@
         "dockerfile": "Dockerfile"
     },
     "containerEnv": {
-        "DEVPOD": "1"
+        "DEVPOD": "1",
+        "MISE_ENV": "devpod"
     },
     "postCreateCommand": "scripts/setup"
 }
