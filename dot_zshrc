@@ -119,4 +119,11 @@ fpath+=~/.zfunc; autoload -Uz compinit; compinit
 source <(kubectl completion zsh)
 
 # Flux
-command -v flux >/dev/null && . <(flux completion zsh)
+if command -v flux >/dev/null ; then
+  source <(flux completion zsh)
+fi
+
+# Mise
+if command -v mise > /dev/null ; then
+  source <(mise completion zsh)
+fi
