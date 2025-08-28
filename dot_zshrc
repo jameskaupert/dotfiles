@@ -33,6 +33,9 @@ export LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30
 # Activate Mise
 eval "$($HOME/.local/bin/mise activate zsh)"
 
+# Hook into direnv
+eval "$(direnv hook zsh)"
+
 # Keybindings
 bindkey -v
 bindkey '^p' history-search-backward
