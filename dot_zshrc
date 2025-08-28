@@ -116,7 +116,12 @@ source <(fzf --zsh)
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
 # K8s
-source <(kubectl completion zsh)
+if [[ "$DEVPOD" == "true" ]]; then
+# skip kubectl completion due to devcontainer terminal display issues
+  :
+else
+  source <(kubectl completion zsh)
+fi
 
 # Flux
 command -v flux >/dev/null && . <(flux completion zsh)
