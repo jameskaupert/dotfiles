@@ -58,5 +58,5 @@ magenta = "#938aa9"
 cyan = "#7aa89f"
 white = "#c4b28a"
 
-[shell]
+[terminal.shell]
 program = "tmux"
