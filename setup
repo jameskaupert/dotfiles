@@ -11,7 +11,7 @@ fi
 echo "-- installing chezmoi -- "
 # chezmoi install
 if ! command -v chezmoi >/dev/null; then
-  sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:jameskaupert/dotfiles.git
+  sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:jameskaupert/dotfiles-functional.git
 fi
 
 if [ ! -d "$HOME/.zsh" ]; then
